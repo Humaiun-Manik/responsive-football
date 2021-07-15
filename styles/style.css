@@ -257,4 +257,7 @@ footer{
     #reply{
         width: 94%;
     }
+    .footer-logo {
+        width: 65%;
+    }
 }
