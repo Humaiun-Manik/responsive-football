@@ -254,4 +254,7 @@ footer{
     header, .top-players, .recent-posts{
         grid-template-columns: repeat(1, 1fr);
     }
+    #reply{
+        width: 94%;
+    }
 }
