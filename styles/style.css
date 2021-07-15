@@ -33,8 +33,7 @@ section{
 }
 .container{
     width: 80%;
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: 65px;
 }
 /* nav styles */
 header{
@@ -136,9 +135,9 @@ nav{
 .info{
     width: 469px;
     height: 309px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+}
+.info P{
+    margin-bottom: 40px;
 }
 .info a{
     width: 120px;
@@ -201,6 +200,7 @@ button{
     border: none;
     font-size: 20px;
     color: #fff8f8;
+    margin-left: 50px;
 }
 /* footer styles */
 .content{
@@ -234,5 +234,24 @@ button{
 }
 footer{
     padding-bottom: 63px;
-    margin-top: -40px;
+    margin-top: 50px;
+}
+/* Media Query */
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+    .template, .container, .title, .banner, .posts{ 
+        width: 100%;
+    }
+    .players, .player, .info, .match{
+        width: 96%;
+    }
+    .match img{
+        margin-top: 200px;
+    }
+    nav, .template, .blog{
+        flex-direction: column;
+    }
+    header, .top-players, .recent-posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
